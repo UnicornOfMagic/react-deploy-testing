@@ -45,6 +45,7 @@
 		F4BD287BECF76690829266E8 /* libPods-ReactNativeTestingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACE5DEEF871DA78B5994EAB /* libPods-ReactNativeTestingTests.a */; };
 		9D2F225F11514B9D9C56BAA8 /* libAppCenterReactNativeAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3343E78D1474AB58B0332C4 /* libAppCenterReactNativeAnalytics.a */; };
 		F7862387BC3E467AB2B76FA4 /* libAppCenterReactNativeCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE0E9A52837425FADC810FC /* libAppCenterReactNativeCrashes.a */; };
+		B436378BD392492884417A7F /* libAppCenterReactNativePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38B6A856BC14B2CA6CBC62F /* libAppCenterReactNativePush.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -369,6 +370,8 @@
 		D3343E78D1474AB58B0332C4 /* libAppCenterReactNativeAnalytics.a */ = {isa = PBXFileReference; name = "libAppCenterReactNativeAnalytics.a"; path = "libAppCenterReactNativeAnalytics.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		F88F3679EEAE481FA636D258 /* AppCenterReactNativeCrashes.xcodeproj */ = {isa = PBXFileReference; name = "AppCenterReactNativeCrashes.xcodeproj"; path = "../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		4FE0E9A52837425FADC810FC /* libAppCenterReactNativeCrashes.a */ = {isa = PBXFileReference; name = "libAppCenterReactNativeCrashes.a"; path = "libAppCenterReactNativeCrashes.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		B695EBDB2C774C9A96135B11 /* AppCenterReactNativePush.xcodeproj */ = {isa = PBXFileReference; name = "AppCenterReactNativePush.xcodeproj"; path = "../node_modules/appcenter-push/ios/AppCenterReactNativePush.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		B38B6A856BC14B2CA6CBC62F /* libAppCenterReactNativePush.a */ = {isa = PBXFileReference; name = "libAppCenterReactNativePush.a"; path = "libAppCenterReactNativePush.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +405,7 @@
 				6F1920A7C8C5CCCDD3918C84 /* libPods-ReactNativeTesting.a in Frameworks */,
 				9D2F225F11514B9D9C56BAA8 /* libAppCenterReactNativeAnalytics.a in Frameworks */,
 				F7862387BC3E467AB2B76FA4 /* libAppCenterReactNativeCrashes.a in Frameworks */,
+				B436378BD392492884417A7F /* libAppCenterReactNativePush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +616,7 @@
 				A261D4F726534DF5B50D9723 /* AppCenterReactNative.xcodeproj */,
 				D0147840E424485EB89D2051 /* AppCenterReactNativeAnalytics.xcodeproj */,
 				F88F3679EEAE481FA636D258 /* AppCenterReactNativeCrashes.xcodeproj */,
+				B695EBDB2C774C9A96135B11 /* AppCenterReactNativePush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1312,12 +1317,14 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = ReactNativeTestingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1342,12 +1349,14 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = ReactNativeTestingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1373,6 +1382,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = ReactNativeTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1397,6 +1407,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = ReactNativeTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1428,11 +1439,13 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = "ReactNativeTesting-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1467,11 +1480,13 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = "ReactNativeTesting-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1505,11 +1520,13 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = "ReactNativeTesting-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1543,11 +1560,13 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = "ReactNativeTesting-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
